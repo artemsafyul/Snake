@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class Snake : MonoBehaviour
+using Mirror;
+public class Snake : NetworkBehaviour
 {
     [SerializeField] float speed = 3f, rotationSpeed = 180f, speedChange = 0.5f;
     [SerializeField] GameObject tailPrefab;
